@@ -1,6 +1,9 @@
-# Abstracts Labeling - Data Mining 2019/2020 Project
+# Abstracts Labeling
 
-## Project description
+Project for an academic contest on http://knowledgepit.ml, which is also the second project for Data Mining 2019/2020
+course at University of Warsaw.
+
+## Problem description
 
 Data for this project consists of two tables in a tab-separated columns format. Each row in those files corresponds to an abstract of a scientific article from ACM Digital Library, which was assigned to one or more topics from the ACM Computing Classification System.
 
@@ -12,8 +15,9 @@ The task and the format of submissions: the task for you is to predict the label
 
 Evaluation: the quality of submissions will be evaluated using the average F1-score measure, i.e., for each test document, the F1-score between the predicted and true labels will be computed, and the values obtained for all test cases will be averaged.
 
-## Usage
-The projects is in Jupyter Notebook `abstracts.ipynb` (html version `abstracts.html`).
+## Solution
+
+The solution with full description is in Jupyter Notebook `abstracts.ipynb` (html version `abstracts.html`).
 
 #### Running and development
 ```bash
@@ -22,3 +26,10 @@ source venv/bin/activate
 pip install -r requirements.txt
 jupyter lab
 ```
+
+## Result
+
+Preliminary score on the partial dataset was `0.4296`.
+
+After final evaluation the score was `0.429108`, which gave me the **third place** in the
+contest (second place excluding the organizer)!
